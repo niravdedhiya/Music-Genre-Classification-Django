@@ -1,0 +1,41 @@
+{% load static %}
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+<link href="{% static 'music/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/fontawesome-all.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/swiper.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/styles.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/mystyle.css' %}" rel="stylesheet">
+<link href="{% static 'music/css/simpletextrotator.css' %}" rel="stylesheet">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="height: 15%">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+
+    <a class="navbar-brand" style="text-decoration: none;" href="{% url 'predictor:index' %}"><font color="8ac6d1">MUSIC GENRE CLASSIFIER</font></a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#basic-2">CHECK GENRE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#statistics">STATISTICS</a>
+            </li>
+        </ul>
+    </div>
+
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->

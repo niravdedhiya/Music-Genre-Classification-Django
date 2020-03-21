@@ -1,0 +1,87 @@
+{{file.name}}
+{%load static%}
+<html lang="en">
+<head>
+
+	<title>Music Genre Classification</title>
+
+<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="{% static 'music/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'music/css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'music/css/swiper.css' %}" rel="stylesheet">
+  	<link href="{% static 'music/css/magnific-popup.css' %}" rel="stylesheet">
+  	<link href="{% static 'music/css/styles.css' %}" rel="stylesheet">
+  	<link href="{% static 'music/css/mystyle.css' %}" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{% static 'music/images/headphone.png' %}">
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+<div id="features" class="tabs">
+    <div class="container">
+        <div class="card right-pane" style="margin-top: -5rem;">
+            <div class="card-body">
+                <div class="card-icon">
+                    <a title="Close (Esc)" href="{% url 'predictor:index' %}" style="color: white">
+                      <i class="fas fa-backward"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Your Music's Genre is</h2>
+                <div class="col-md-12">
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="{% static 'music/images/celebration-1.png' %}" alt="alternative">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card right-pane" style="margin-top: -5rem;">
+                                <div class="card-body">
+                                    <div class="card-icon" style="height: 38vh; width: 38vh; margin-top: 6rem; margin-left: 3rem; background-color: blueviolet">
+                                        <h3 style="margin-top: 7rem;">
+                                        <i>
+                                        	{{ genre }}
+                                        </i>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="{% static 'music/images/celebration-2.png' %}" style="height: 300px;" alt="alternative">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+
+
+
+</div>
+</div>
+
+
+{%include 'music/snippets/js.html'%}
+</body>
+</html>
+
+
+
+
